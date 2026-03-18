@@ -9,17 +9,17 @@ const Navbar = () => {
     const navLinks = <>
 
         <li>
-            <NavLink to="/" className="border-b border-transparent">
+            <NavLink to="/">
                 Home
             </NavLink>
         </li>
         <li>
-            <NavLink to="/apps" className="border-b border-transparent">
+            <NavLink to="/apps">
                 Apps
             </NavLink>
         </li>
         <li>
-            <NavLink to="/installation" className="border-b border-transparent">
+            <NavLink to="/installation">
                 Installation
             </NavLink>
         </li>
@@ -29,22 +29,22 @@ const Navbar = () => {
         <nav className="bg-base-100">
             <div className="navbar max-w-7xl mx-auto px-4">
 
-                {/* Left - Logo */}
+                {/* Left Side */}
                 <section className="navbar-start">
                     <Logo />
                 </section>
 
-                {/* Center - Desktop Menu */}
+                {/* Center Section */}
                 <section className="navbar-center hidden md:flex">
-                    <ul id="nav-links" className="menu menu-horizontal px-1 gap-3 text-sm font-medium rounded-none">
+                    <ul id="nav-links" className="menu menu-horizontal px-1 gap-3 text-sm font-medium">
                         {navLinks}
                     </ul>
                 </section>
 
-                {/* Right - Button + Hamburger */}
+                {/* Right Side */}
                 <section className="navbar-end flex items-center gap-2">
 
-                    {/* Contribute Button (hidden on small screens) */}
+
                     <a
                         href="#"
                         className="hidden sm:flex btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none items-center gap-2"
@@ -53,7 +53,7 @@ const Navbar = () => {
                         Contribute
                     </a>
 
-                    {/* Hamburger Menu (right side on mobile) */}
+                    {/* Hamburger menu for mobile devices */}
                     <div className="dropdown dropdown-end md:hidden">
                         <label tabIndex={0} className="btn btn-ghost">
                             <FaBars size={18} />
@@ -65,7 +65,6 @@ const Navbar = () => {
                         >
                             {navLinks}
 
-                            {/* Mobile Contribute Button */}
                             <li className="mt-2">
                                 <a className="btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none flex items-center gap-2">
                                     <FaGithub />
