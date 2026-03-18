@@ -1,9 +1,10 @@
 import React from 'react';
+import TrendingApps from './TrendingApps';
 
 const Home = () => {
     return (
-        <section>
-            This is Home Page
+        <section className='max-w-7xl mx-auto'>
+            <TrendingApps />
         </section>
     );
 };

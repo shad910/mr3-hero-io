@@ -10,7 +10,7 @@ const HomeLayout = () => {
                 <Navbar />
             </header>
 
-            <main className='flex-1'>
+            <main className='flex-1 bg-base-200'>
                 <Outlet />
             </main>
 

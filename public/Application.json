@@ -1,0 +1,282 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn-icons-png.flaticon.com/512/4697/4697260.png",
+    "title": "Todo Master",
+    "companyName": "TaskFlow Inc.",
+    "description": "Organize daily tasks, set priorities and boost productivity.",
+    "size": 25,
+    "reviews": 12450,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 4500 }, { "name": "5 star", "count": 6150 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://cdn-icons-png.flaticon.com/512/2965/2965129.png",
+    "title": "Quick Notes",
+    "companyName": "Noteify",
+    "description": "Capture ideas instantly with fast and simple note taking.",
+    "size": 18,
+    "reviews": 8450,
+    "ratingAvg": 4.4,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 150 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 3000 }, { "name": "5 star", "count": 4100 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://cdn-icons-png.flaticon.com/512/3652/3652191.png",
+    "title": "Smart Calendar",
+    "companyName": "Schedula",
+    "description": "Plan events, reminders, and meetings with ease.",
+    "size": 30,
+    "reviews": 10200,
+    "ratingAvg": 4.6,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 180 }, { "name": "2 star", "count": 250 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 3500 }, { "name": "5 star", "count": 5270 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://cdn-icons-png.flaticon.com/512/3767/3767084.png",
+    "title": "File Manager Pro",
+    "companyName": "StorageTech",
+    "description": "Manage, organize and transfer files efficiently.",
+    "size": 40,
+    "reviews": 15000,
+    "ratingAvg": 4.3,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 400 }, { "name": "2 star", "count": 600 }, { "name": "3 star", "count": 2000 }, { "name": "4 star", "count": 5000 }, { "name": "5 star", "count": 7000 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://cdn-icons-png.flaticon.com/512/2875/2875394.png",
+    "title": "Cloud Sync",
+    "companyName": "SkyStorage",
+    "description": "Backup and sync files securely across devices.",
+    "size": 35,
+    "reviews": 9800,
+    "ratingAvg": 4.5,
+    "downloads": 600000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 3200 }, { "name": "5 star", "count": 4900 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://cdn-icons-png.flaticon.com/512/3064/3064197.png",
+    "title": "Password Safe",
+    "companyName": "SecureX",
+    "description": "Store and manage passwords with high security.",
+    "size": 22,
+    "reviews": 11200,
+    "ratingAvg": 4.7,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 100 }, { "name": "2 star", "count": 200 }, { "name": "3 star", "count": 800 }, { "name": "4 star", "count": 3200 }, { "name": "5 star", "count": 6900 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://cdn-icons-png.flaticon.com/512/732/732200.png",
+    "title": "Mail Pro",
+    "companyName": "Inboxify",
+    "description": "Manage emails smartly with filters and AI sorting.",
+    "size": 28,
+    "reviews": 13400,
+    "ratingAvg": 4.4,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 500 }, { "name": "3 star", "count": 1500 }, { "name": "4 star", "count": 4800 }, { "name": "5 star", "count": 6300 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn-icons-png.flaticon.com/512/1163/1163763.png",
+    "title": "Weather Now",
+    "companyName": "SkyCast",
+    "description": "Real-time weather updates and forecasts.",
+    "size": 20,
+    "reviews": 8900,
+    "ratingAvg": 4.3,
+    "downloads": 550000,
+    "ratings": [
+      { "name": "1 star", "count": 250 }, { "name": "2 star", "count": 350 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 2800 }, { "name": "5 star", "count": 4300 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://cdn-icons-png.flaticon.com/512/2911/2911230.png",
+    "title": "Doc Scanner",
+    "companyName": "ScanPro",
+    "description": "Scan documents quickly and convert to PDF.",
+    "size": 26,
+    "reviews": 10100,
+    "ratingAvg": 4.6,
+    "downloads": 670000,
+    "ratings": [
+      { "name": "1 star", "count": 180 }, { "name": "2 star", "count": 260 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 3400 }, { "name": "5 star", "count": 5260 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://cdn-icons-png.flaticon.com/512/2065/2065163.png",
+    "title": "Team Chat",
+    "companyName": "CollabTech",
+    "description": "Communicate and collaborate with your team.",
+    "size": 32,
+    "reviews": 12000,
+    "ratingAvg": 4.5,
+    "downloads": 800000,
+    "ratings": [
+      { "name": "1 star", "count": 220 }, { "name": "2 star", "count": 320 }, { "name": "3 star", "count": 1400 }, { "name": "4 star", "count": 4200 }, { "name": "5 star", "count": 5860 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://cdn-icons-png.flaticon.com/512/2460/2460413.png",
+    "title": "Budget Tracker",
+    "companyName": "MoneyWise",
+    "description": "Track expenses and manage personal finances.",
+    "size": 24,
+    "reviews": 9500,
+    "ratingAvg": 4.4,
+    "downloads": 620000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1100 }, { "name": "4 star", "count": 3100 }, { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://cdn-icons-png.flaticon.com/512/3659/3659714.png",
+    "title": "Focus Music",
+    "companyName": "ZenAudio",
+    "description": "Boost concentration with curated focus music.",
+    "size": 27,
+    "reviews": 7800,
+    "ratingAvg": 4.6,
+    "downloads": 400000,
+    "ratings": [
+      { "name": "1 star", "count": 120 }, { "name": "2 star", "count": 200 }, { "name": "3 star", "count": 800 }, { "name": "4 star", "count": 2600 }, { "name": "5 star", "count": 4080 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://cdn-icons-png.flaticon.com/512/1973/1973617.png",
+    "title": "Translate Plus",
+    "companyName": "LinguaTech",
+    "description": "Translate languages instantly with accuracy.",
+    "size": 29,
+    "reviews": 11000,
+    "ratingAvg": 4.5,
+    "downloads": 720000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 3600 }, { "name": "5 star", "count": 5700 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://cdn-icons-png.flaticon.com/512/2875/2875345.png",
+    "title": "Drive Backup",
+    "companyName": "SafeCloud",
+    "description": "Securely store and backup your important files.",
+    "size": 38,
+    "reviews": 9900,
+    "ratingAvg": 4.4,
+    "downloads": 680000,
+    "ratings": [
+      { "name": "1 star", "count": 250 }, { "name": "2 star", "count": 350 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 3000 }, { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://cdn-icons-png.flaticon.com/512/2590/2590514.png",
+    "title": "Screen Recorder",
+    "companyName": "Recordify",
+    "description": "Record screen activity for tutorials and work.",
+    "size": 33,
+    "reviews": 8700,
+    "ratingAvg": 4.3,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1200 }, { "name": "4 star", "count": 2600 }, { "name": "5 star", "count": 4200 }
+    ]
+  },
+  {
+    "id": 16,
+    "image": "https://cdn-icons-png.flaticon.com/512/2088/2088617.png",
+    "title": "Time Tracker",
+    "companyName": "WorkFlow",
+    "description": "Track time spent on tasks and projects.",
+    "size": 21,
+    "reviews": 9200,
+    "ratingAvg": 4.5,
+    "downloads": 610000,
+    "ratings": [
+      { "name": "1 star", "count": 180 }, { "name": "2 star", "count": 260 }, { "name": "3 star", "count": 1100 }, { "name": "4 star", "count": 3200 }, { "name": "5 star", "count": 4460 }
+    ]
+  },
+  {
+    "id": 17,
+    "image": "https://cdn-icons-png.flaticon.com/512/2592/2592231.png",
+    "title": "App Locker",
+    "companyName": "SecureApps",
+    "description": "Lock apps and protect your privacy.",
+    "size": 19,
+    "reviews": 8800,
+    "ratingAvg": 4.4,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 1000 }, { "name": "4 star", "count": 2800 }, { "name": "5 star", "count": 4500 }
+    ]
+  },
+  {
+    "id": 18,
+    "image": "https://cdn-icons-png.flaticon.com/512/2108/2108625.png",
+    "title": "Daily News",
+    "companyName": "NewsHub",
+    "description": "Stay updated with the latest global news.",
+    "size": 23,
+    "reviews": 7600,
+    "ratingAvg": 4.2,
+    "downloads": 470000,
+    "ratings": [
+      { "name": "1 star", "count": 300 }, { "name": "2 star", "count": 400 }, { "name": "3 star", "count": 1100 }, { "name": "4 star", "count": 2500 }, { "name": "5 star", "count": 3300 }
+    ]
+  },
+  {
+    "id": 19,
+    "image": "https://cdn-icons-png.flaticon.com/512/2964/2964514.png",
+    "title": "Fitness Tracker",
+    "companyName": "HealthPlus",
+    "description": "Track workouts, calories and daily health stats.",
+    "size": 31,
+    "reviews": 11300,
+    "ratingAvg": 4.6,
+    "downloads": 780000,
+    "ratings": [
+      { "name": "1 star", "count": 150 }, { "name": "2 star", "count": 250 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 3500 }, { "name": "5 star", "count": 6500 }
+    ]
+  },
+  {
+    "id": 20,
+    "image": "https://cdn-icons-png.flaticon.com/512/2311/2311915.png",
+    "title": "Smart Calculator",
+    "companyName": "CalcTech",
+    "description": "Advanced calculator for everyday and business use.",
+    "size": 15,
+    "reviews": 6700,
+    "ratingAvg": 4.3,
+    "downloads": 450000,
+    "ratings": [
+      { "name": "1 star", "count": 200 }, { "name": "2 star", "count": 300 }, { "name": "3 star", "count": 900 }, { "name": "4 star", "count": 2200 }, { "name": "5 star", "count": 3100 }
+    ]
+  }
+]

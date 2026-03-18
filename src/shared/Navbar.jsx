@@ -46,7 +46,8 @@ const Navbar = () => {
 
 
                     <a
-                        href="#"
+                        href="https://github.com/shad910"
+                        target="_blank"
                         className="hidden sm:flex btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none items-center gap-2"
                     >
                         <FaGithub />
