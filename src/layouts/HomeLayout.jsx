@@ -1,13 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router';
+import Navbar from '../shared/Navbar';
 
 const HomeLayout = () => {
     return (
-        <div>
-            <header></header>
+        <div className='flex flex-col'>
+            <header>
+                <Navbar />
+            </header>
 
-            <main>
-                <Outlet/>
+            <main className='flex-1'>
+                <Outlet />
             </main>
 
             <footer></footer>

@@ -10,3 +10,8 @@
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+#nav-links > li > a.active {
+  /* @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2]; */
+  @apply bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent border-b border-[#9F62F2] rounded-none;
+}
