@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Card from '../../shared/Card';
+import { Link } from 'react-router';
 
 const TrendingApps = () => {
 
     const [trendingApps, setTrendingApps] = useState([]);
-    const [num, setNum] = useState(8);
 
     useEffect(() => {
         fetch('Application.json')
@@ -12,7 +12,6 @@ const TrendingApps = () => {
             .then(data => setTrendingApps(data))
             .catch(error => console.error('Error fetching trending apps:', error));
     }, []);
-
 
     return (
         <div className='my-20'>
@@ -22,21 +21,16 @@ const TrendingApps = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-                {trendingApps.slice(0, num).map(data => (
+                {trendingApps.slice(0, 8).map(data => (
                     <Card key={data.id} data={data} />
                 ))}
             </div>
 
             <div className='flex justify-center my-10'>
-                {
-                    num === 8
-                        ? <button onClick={() => setNum(20)} className="btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none cursor-pointer">
-                            Show All
-                        </button>
-                        : <button onClick={() => setNum(8)} className="btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none cursor-pointer">
-                            Show Less
-                        </button>
-                }
+
+                <Link to="/apps" className="btn btn-sm bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white border-none cursor-pointer hover:opacity-90">
+                    Show All
+                </Link>
 
             </div>
 
