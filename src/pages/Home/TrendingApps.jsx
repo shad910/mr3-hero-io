@@ -14,7 +14,7 @@ const TrendingApps = () => {
     }, []);
 
     return (
-        <div className='my-20'>
+        <section className='my-20'>
             <div className='text-center space-y-2 my-5'>
                 <h2 className="text-2xl font-bold">Trending Apps</h2>
                 <p>Explore All Trending Apps on the Market developed by us</p>
@@ -34,7 +34,7 @@ const TrendingApps = () => {
 
             </div>
 
-        </div>
+        </section>
 
     );
 };
