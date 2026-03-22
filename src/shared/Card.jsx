@@ -13,7 +13,7 @@ const Card = ({ data }) => {
   };
 
   return (
-    <Link className="group relative w-full bg-base-100 rounded-lg border border-base-100 p-4 shadow-sm transition-all duration-700 ease-in-out hover:shadow-xl hover:-translate-y-1 cursor-pointer overflow-hidden">
+    <Link to={`/apps-details/${data.id}`} className="group relative w-full bg-base-100 rounded-lg border border-base-100 p-4 shadow-sm transition-all duration-700 ease-in-out hover:shadow-xl hover:-translate-y-1 cursor-pointer overflow-hidden">
 
       <div className="relative aspect-square overflow-hidden rounded-lg bg-[#FAFAFA] mb-4">
         <img

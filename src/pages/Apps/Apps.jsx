@@ -1,10 +1,16 @@
-import React from 'react';
-import { useLoaderData } from 'react-router';
+import React, { useEffect, useState } from 'react';
 import Card from '../../shared/Card';
 
 const Apps = () => {
 
-    const apps = useLoaderData();
+    const [apps, setApps] = useState([]);
+
+    useEffect(() => {
+        fetch('Application.json')
+            .then(response => response.json())
+            .then(data => setApps(data))
+            .catch(error => console.error('Error fetching apps:', error));
+    }, []);
 
 
     return (
@@ -15,7 +21,7 @@ const Apps = () => {
             </div>
 
             <div className='my-8 flex justify-between items-center'>
-                <h5 className='text-[#001931] text-lg font-semibold'>({apps.length}) Apps Found</h5>
+                <h5 className='text-[#001931] text-sm font-medium'>({apps.length}) Apps Found</h5>
                 <label className="input">
                     <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <g
