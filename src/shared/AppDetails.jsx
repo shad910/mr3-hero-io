@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
-import { FaStar, FaThumbsUp } from 'react-icons/fa';
-import { FiDownload } from 'react-icons/fi';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import download from '../assets/icon-downloads.png';
 import rating from '../assets/icon-ratings.png';

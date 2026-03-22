@@ -14,7 +14,7 @@ const Apps = () => {
 
 
     return (
-        <section className='max-w-7xl mx-auto mb-20'>
+        <section className='max-w-7xl px-4 mx-auto mb-20'>
             <div className='text-center space-y-2.5 my-10'>
                 <h2 className='text-4xl font-bold'>Our All Applications</h2>
                 <p className='text-[#627382]'>Explore All Apps on the Market developed by us. We code for Millions</p>

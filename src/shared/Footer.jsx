@@ -1,8 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import { FaLinkedinIn, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import Logo from "./Logo";
 
 const Footer = () => {
 
@@ -49,7 +48,12 @@ const Footer = () => {
 
                     {/* Left Side */}
                     <div className="flex items-center gap-2">
-                        <Logo />
+                        <Link to="/" className="flex items-center gap-0.5">
+                            <img src="/src/assets/logo.png" alt="Logo" className="w-7 h-7 rounded-md" />
+                            <span className="font-bold text-xl text-white">
+                                HERO.IO
+                            </span>
+                        </Link>
                     </div>
 
                     {/* Center Section */}

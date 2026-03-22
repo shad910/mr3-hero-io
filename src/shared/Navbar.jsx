@@ -1,8 +1,7 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
 import { FaGithub, FaBars } from "react-icons/fa";
-
-import Logo from "./Logo";
-import { NavLink } from "react-router";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
 
@@ -27,11 +26,16 @@ const Navbar = () => {
 
     return (
         <nav className="bg-base-100">
-            <div className="navbar max-w-7xl mx-auto px-4">
+            <div className="navbar max-w-7xl px-4 mx-auto">
 
                 {/* Left Side */}
                 <section className="navbar-start">
-                    <Logo />
+                    <Link to="/" className="flex items-center gap-0.5">
+                        <img src={Logo} alt="Logo" className="w-7 h-7 rounded-md" />
+                        <span className="font-bold text-xl bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+                            HERO.IO
+                        </span>
+                    </Link>
                 </section>
 
                 {/* Center Section */}
