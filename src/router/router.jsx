@@ -6,6 +6,9 @@ import Apps from "../pages/Apps/Apps";
 import AppDetails from "../shared/AppDetails";
 import Loading from "../shared/Loading";
 import Installation from "../pages/Installation/Installation";
+import AboutUs from "../pages/Extra/AboutUs";
+import ContactUs from "../pages/Extra/ContactUs";
+import TermsCondition from "../pages/Extra/Terms&Condition";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +41,21 @@ const router = createBrowserRouter([
         hydrateFallbackElement: <Loading />,
         loader: () => fetch(`/Application.json`),
         Component: Installation
+      },
+      {
+        path: "about-us",
+        hydrateFallbackElement: <Loading />,
+        Component: AboutUs
+      },
+      {
+        path: "contact-us",
+        hydrateFallbackElement: <Loading />,
+        Component: ContactUs
+      },
+      {
+        path: "terms-condition",
+        hydrateFallbackElement: <Loading />,
+        Component: TermsCondition
       }
     ],
   },

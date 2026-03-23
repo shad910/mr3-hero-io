@@ -5,7 +5,7 @@ import app from "../../assets/banner.png";
 const Banner = () => {
   return (
     <div className="bg-base-200 pt-15 px-4">
-      <div className="max-w-6xl mx-auto text-center">
+      <div className="max-w-7xl mx-auto text-center">
 
         {/* Heading */}
         <h1 className="text-3xl md:text-5xl font-bold text-gray-800">
@@ -25,14 +25,14 @@ const Banner = () => {
           <a href="https://play.google.com/store/games?hl=en"
             target="_blank"
             className="btn btn-sm md:btn-md bg-white text-black border border-gray-300 hover:bg-gray-100">
-            <FaGooglePlay className="text-green-500" />
+            <FaGooglePlay size={20} className="text-green-500" />
             Google Play
           </a>
 
           <a href="https://www.apple.com/app-store/"
             target="_blank"
             className="btn btn-sm md:btn-md bg-white text-black border border-gray-300 hover:bg-gray-100">
-            <FaApple className="text-black" />
+            <FaApple size={20} className="text-black" />
             App Store
           </a>
         </div>
