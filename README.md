@@ -1,7 +1,5 @@
 # 🦸‍♂️ HERO.IO - App Discovery Platform
 
-![HERO.IO Logo](src/assets/logo.png)
-
 ## 🌟 Overview
 
 HERO.IO is a modern, responsive web application that serves as an app discovery and installation platform. Built with React and Vite, it provides users with a seamless experience to browse, search, and install applications with detailed reviews, ratings, and statistics.
