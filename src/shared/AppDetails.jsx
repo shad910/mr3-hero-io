@@ -120,7 +120,7 @@ const AppDetails = () => {
             {/* Description */}
             <div className="mt-6 md:mt-10">
                 <h3 className="font-bold mb-2 text-lg">Description</h3>
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base break-words">
+                <p className="text-gray-600 leading-relaxed text-sm sm:text-base wrap-break-word">
                     {description}
                 </p>
             </div>
