@@ -18,12 +18,16 @@ const AboutUs = () => {
     return (
         <div className="min-h-screen bg-base-200">
             {/* Hero Section */}
-            <section className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white">
+            <section 
+                className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+            >
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in" data-aos-delay="200">
                         About <span className="text-yellow-300">HERO.IO</span>
                     </h1>
-                    <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
                         We are passionate creators building the future of mobile applications,
                         one innovative solution at a time.
                     </p>
@@ -35,7 +39,12 @@ const AboutUs = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 md:gap-4">
                         {stats.map((stat, index) => (
-                            <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                            <div 
+                                key={index} 
+                                className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                                data-aos="fade-up"
+                                data-aos-delay={`${index * 200}`}
+                            >
                                 <div className="inline-flex items-center justify-center w-12 h-12 bg-linear-to-r from-[#632EE3] to-[#9F62F2] rounded-full mb-4">
                                     <stat.icon className="text-white text-xl" />
                                 </div>
@@ -50,13 +59,13 @@ const AboutUs = () => {
             {/* Mission Section */}
             <section className="py-16 px-4 bg-white">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Mission</h2>
                         <div className="w-24 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto rounded-full"></div>
                     </div>
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                        <div className="space-y-6">
+                        <div className="space-y-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                             <h3 className="text-2xl font-bold text-gray-800">Building the Future of Mobile Apps</h3>
                             <p className="text-gray-600 leading-relaxed">
                                 At HERO.IO, we believe that great software can transform lives. Our mission is to create
@@ -74,7 +83,7 @@ const AboutUs = () => {
                             </div>
                         </div>
 
-                        <div className="relative">
+                        <div className="relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                             <div className="bg-linear-to-br from-[#632EE3] to-[#9F62F2] rounded-2xl p-8 text-white">
                                 <h4 className="text-xl font-bold mb-4">Why Choose HERO.IO?</h4>
                                 <ul className="space-y-3">
@@ -104,7 +113,7 @@ const AboutUs = () => {
             {/* Team Section */}
             <section className="py-16 px-4">
                 <div className="max-w-7xl mx-auto">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12" data-aos="fade-up" data-aos-duration="1000">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Meet Our Team</h2>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             The creative minds behind HERO.IO's success
@@ -113,7 +122,12 @@ const AboutUs = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {team.map((member, index) => (
-                            <div key={index} className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                            <div 
+                                key={index} 
+                                className="bg-white rounded-xl p-6 text-center shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+                                data-aos="fade-up"
+                                data-aos-delay={`${index * 200}`}
+                            >
                                 <div className="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-4 border-linear-to-r from-[#632EE3] to-[#9F62F2]">
                                     <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
                                 </div>
@@ -126,13 +140,13 @@ const AboutUs = () => {
             </section>
 
             {/* CTA Section */}
-            <section className="py-16 px-4 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white">
+            <section className="py-16 px-4 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white" data-aos="fade-up" data-aos-duration="1000">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Build Something Amazing?</h2>
-                    <p className="text-lg opacity-90 mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="zoom-in" data-aos-delay="200">Ready to Build Something Amazing?</h2>
+                    <p className="text-lg opacity-90 mb-8" data-aos="fade-up" data-aos-delay="400">
                         Let's work together to create the next big thing in mobile applications.
                     </p>
-                    <button className="btn btn-lg bg-white text-[#632EE3] hover:bg-gray-100 border-none font-bold px-8">
+                    <button className="btn btn-lg bg-white text-[#632EE3] hover:bg-gray-100 border-none font-bold px-8" data-aos="zoom-in" data-aos-delay="600">
                         Get In Touch
                     </button>
                 </div>

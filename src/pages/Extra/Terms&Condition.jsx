@@ -49,12 +49,16 @@ const TermsCondition = () => {
     return (
         <div className="min-h-screen bg-base-200">
             {/* Hero Section */}
-            <section className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white">
+            <section 
+                className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+            >
                 <div className="max-w-4xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in" data-aos-delay="200">
                         Terms & <span className="text-yellow-300">Conditions</span>
                     </h1>
-                    <p className="text-lg md:text-xl opacity-90">
+                    <p className="text-lg md:text-xl opacity-90" data-aos="fade-up" data-aos-delay="400">
                         Please read these terms carefully before using our services.
                         Your use of HERO.IO constitutes acceptance of these terms.
                     </p>
@@ -65,7 +69,7 @@ const TermsCondition = () => {
             <section className="py-16 px-4">
                 <div className="max-w-4xl mx-auto">
                     {/* Last Updated */}
-                    <div className="bg-white rounded-xl p-6 mb-8 shadow-lg">
+                    <div className="bg-white rounded-xl p-6 mb-8 shadow-lg" data-aos="fade-up" data-aos-duration="1000">
                         <div className="flex items-center justify-between flex-wrap gap-4">
                             <div>
                                 <h2 className="text-lg font-bold text-gray-800">Terms of Service</h2>
@@ -78,7 +82,7 @@ const TermsCondition = () => {
                     </div>
 
                     {/* Introduction */}
-                    <div className="bg-white rounded-xl p-8 mb-8 shadow-lg">
+                    <div className="bg-white rounded-xl p-8 mb-8 shadow-lg" data-aos="fade-up" data-aos-delay="200">
                         <h2 className="text-2xl font-bold text-gray-800 mb-4">Introduction</h2>
                         <p className="text-gray-600 leading-relaxed mb-4">
                             Welcome to HERO.IO. These terms and conditions outline the rules and regulations for the use of HERO.IO's services.
@@ -93,7 +97,12 @@ const TermsCondition = () => {
                     {/* Expandable Sections */}
                     <div className="space-y-4">
                         {sections.map((section, index) => (
-                            <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div 
+                                key={index} 
+                                className="bg-white rounded-xl shadow-lg overflow-hidden"
+                                data-aos="fade-up"
+                                data-aos-delay={`${index * 150}`}
+                            >
                                 <button
                                     onClick={() => toggleSection(index)}
                                     className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200"
@@ -119,7 +128,11 @@ const TermsCondition = () => {
                     </div>
 
                     {/* Contact Section */}
-                    <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] rounded-xl p-8 mt-8 text-white">
+                    <div 
+                        className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] rounded-xl p-8 mt-8 text-white"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
                         <div className="text-center">
                             <h2 className="text-2xl font-bold mb-4">Questions About These Terms?</h2>
                             <p className="opacity-90 mb-6">
@@ -143,7 +156,7 @@ const TermsCondition = () => {
                     </div>
 
                     {/* Footer Note */}
-                    <div className="text-center mt-8">
+                    <div className="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
                         <p className="text-gray-500 text-sm">
                             These terms were last updated on March 23, 2026. We reserve the right to modify these terms at any time.
                         </p>

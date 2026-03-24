@@ -52,12 +52,16 @@ const ContactUs = () => {
     return (
         <div className="min-h-screen bg-base-200">
             {/* Hero Section */}
-            <section className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white">
+            <section 
+                className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-20 px-4 text-white"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+            >
                 <div className="max-w-7xl mx-auto text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6" data-aos="zoom-in" data-aos-delay="200">
                         Get In <span className="text-yellow-300">Touch</span>
                     </h1>
-                    <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">
+                    <p className="text-lg md:text-xl opacity-90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="400">
                         Have questions, feedback, or want to collaborate? We'd love to hear from you.
                         Reach out and let's start a conversation.
                     </p>
@@ -70,10 +74,14 @@ const ContactUs = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
                         {/* Contact Form */}
-                        <div className="bg-white rounded-2xl p-8 shadow-xl">
-                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Send us a Message</h2>
+                        <div 
+                            className="bg-white rounded-2xl p-8 shadow-xl"
+                            data-aos="fade-right"
+                            data-aos-duration="1000"
+                        >
+                            <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6" data-aos="fade-up" data-aos-delay="200">Send us a Message</h2>
 
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6" data-aos="fade-up" data-aos-delay="400">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
@@ -137,8 +145,8 @@ const ContactUs = () => {
                         </div>
 
                         {/* Contact Info */}
-                        <div className="space-y-8">
-                            <div>
+                        <div className="space-y-8" data-aos="fade-left" data-aos-duration="1000">
+                            <div data-aos="fade-up" data-aos-delay="200">
                                 <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">Contact Information</h2>
                                 <p className="text-gray-600 mb-8">
                                     Choose the most convenient way to reach us. We're here to help and typically
@@ -149,7 +157,12 @@ const ContactUs = () => {
                             {/* Contact Cards */}
                             <div className="space-y-6">
                                 {contactInfo.map((info, index) => (
-                                    <div key={index} className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                                    <div 
+                                        key={index} 
+                                        className="flex items-start gap-4 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                                        data-aos="fade-up"
+                                        data-aos-delay={`${index * 200}`}
+                                    >
                                         <div className={`p-3 rounded-lg bg-gray-50 ${info.color}`}>
                                             <info.icon className="text-xl" />
                                         </div>
@@ -164,7 +177,7 @@ const ContactUs = () => {
                             </div>
 
                             {/* Social Links */}
-                            <div className="bg-white rounded-xl p-6 shadow-lg">
+                            <div className="bg-white rounded-xl p-6 shadow-lg" data-aos="fade-up" data-aos-delay="200">
                                 <h3 className="font-bold text-gray-800 mb-4">Follow Us</h3>
                                 <div className="flex gap-4">
                                     {socialLinks.map((social, index) => (
@@ -175,6 +188,8 @@ const ContactUs = () => {
                                             rel="noopener noreferrer"
                                             className="p-3 bg-gray-50 rounded-lg hover:bg-linear-to-r hover:from-[#632EE3] hover:to-[#9F62F2] hover:text-white transition-all duration-300 group"
                                             aria-label={social.label}
+                                            data-aos="zoom-in"
+                                            data-aos-delay={`${index * 200}`}
                                         >
                                             <social.icon className="text-xl group-hover:text-white" />
                                         </a>
@@ -187,25 +202,25 @@ const ContactUs = () => {
             </section>
 
             {/* FAQ Section */}
-            <section className="py-16 px-4 bg-white">
+            <section className="py-16 px-4 bg-white" data-aos="fade-up" data-aos-duration="1000">
                 <div className="max-w-4xl mx-auto">
-                    <div className="text-center mb-12">
+                    <div className="text-center mb-12" data-aos="fade-up" data-aos-delay="200">
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Frequently Asked Questions</h2>
                         <div className="w-24 h-1 bg-linear-to-r from-[#632EE3] to-[#9F62F2] mx-auto rounded-full"></div>
                     </div>
 
                     <div className="space-y-6">
-                        <div className="bg-gray-50 rounded-lg p-6">
+                        <div className="bg-gray-50 rounded-lg p-6" data-aos="fade-up" data-aos-delay="300">
                             <h3 className="font-bold text-gray-800 mb-2">How can I download your apps?</h3>
                             <p className="text-gray-600">Visit our Apps page or check the Google Play Store and Apple App Store for our complete collection.</p>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-6">
+                        <div className="bg-gray-50 rounded-lg p-6" data-aos="fade-up" data-aos-delay="500">
                             <h3 className="font-bold text-gray-800 mb-2">Do you offer custom app development?</h3>
                             <p className="text-gray-600">Yes! We specialize in custom mobile app development. Contact us with your project details.</p>
                         </div>
 
-                        <div className="bg-gray-50 rounded-lg p-6">
+                        <div className="bg-gray-50 rounded-lg p-6" data-aos="fade-up" data-aos-delay="700">
                             <h3 className="font-bold text-gray-800 mb-2">How long does app development take?</h3>
                             <p className="text-gray-600">Development time varies by project complexity, but most apps take 3-6 months from concept to launch.</p>
                         </div>

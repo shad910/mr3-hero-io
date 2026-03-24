@@ -2,11 +2,18 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-16 px-4 text-white">
-      <div className="max-w-6xl mx-auto text-center">
+    <div 
+      data-aos="fade-up"
+      className="bg-linear-to-r from-[#632EE3] to-[#9F62F2] py-16 px-4 text-white"
+    >
+      <div className="max-w-7xl mx-auto text-center">
         
         {/* Title */}
-        <h2 className="text-2xl md:text-4xl font-bold mb-10">
+        <h2 
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="text-2xl md:text-4xl font-bold mb-10"
+        >
           Trusted By Millions, Built For You
         </h2>
 
@@ -14,7 +21,10 @@ const Stats = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Downloads */}
-          <div>
+          <div 
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
             <p className="text-sm opacity-80 mb-2">Total Downloads</p>
             <h3 className="text-3xl md:text-5xl font-bold">
               29.6M
@@ -25,7 +35,10 @@ const Stats = () => {
           </div>
 
           {/* Reviews */}
-          <div>
+          <div 
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
             <p className="text-sm opacity-80 mb-2">Total Reviews</p>
             <h3 className="text-3xl md:text-5xl font-bold">
               906K
@@ -36,7 +49,10 @@ const Stats = () => {
           </div>
 
           {/* Active Apps */}
-          <div>
+          <div 
+            data-aos="zoom-in"
+            data-aos-delay="600"
+          >
             <p className="text-sm opacity-80 mb-2">Active Apps</p>
             <h3 className="text-3xl md:text-5xl font-bold">
               132+

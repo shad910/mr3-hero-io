@@ -22,24 +22,26 @@ const router = createBrowserRouter([
       },
       {
         index: true,
+        loader: () => fetch(`/Application.json`),
         hydrateFallbackElement: <Loading />,
         Component: Home,
       },
       {
         path: "apps",
+        loader: () => fetch(`/Application.json`),
         hydrateFallbackElement: <Loading />,
         Component: Apps
       },
       {
         path: "apps-details/:id",
-        hydrateFallbackElement: <Loading />,
         loader: () => fetch(`/Application.json`),
+        hydrateFallbackElement: <Loading />,
         Component: AppDetails
       },
       {
         path: "installation",
-        hydrateFallbackElement: <Loading />,
         loader: () => fetch(`/Application.json`),
+        hydrateFallbackElement: <Loading />,
         Component: Installation
       },
       {
