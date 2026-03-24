@@ -1,213 +1,157 @@
-# 🦸‍♂️ Assignment 03 — Hero IO
+# 🦸‍♂️ HERO.IO - App Discovery Platform
+
+![HERO.IO Logo](src/assets/logo.png)
+
+## 🌟 Overview
+
+HERO.IO is a modern, responsive web application that serves as an app discovery and installation platform. Built with React and Vite, it provides users with a seamless experience to browse, search, and install applications with detailed reviews, ratings, and statistics.
+
+## 🚀 Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Now-blue?style=for-the-badge&logo=netlify)](https://mr3-hero-io.netlify.app/)
+
+## 📁 Project Structure
+
+```
+mr3-hero-io/
+├── public/
+│   ├── Application.json          # App data and metadata
+│   └── netlify.toml              # Netlify deployment configuration
+├── src/
+│   ├── assets/
+│   │   └── reference-design/
+│   │       └── mr3-hero-io.fig   # Figma design reference
+│   ├── context/                  # React context providers
+│   ├── hooks/                    # Custom React hooks
+│   ├── layouts/
+│   │   └── HomeLayout.jsx        # Main layout component
+│   ├── pages/
+│   │   ├── Apps/
+│   │   │   └── Apps.jsx          # All apps listing page
+│   │   ├── Extra/
+│   │   │   ├── AboutUs.jsx       # About us page
+│   │   │   ├── ContactUs.jsx     # Contact page
+│   │   │   └── Terms&Condition.jsx # Terms and conditions
+│   │   ├── Home/
+│   │   │   ├── Banner.jsx        # Hero banner component
+│   │   │   ├── Home.jsx          # Home page
+│   │   │   ├── Stats.jsx         # Statistics section
+│   │   │   └── TrendingApps.jsx  # Trending apps display
+│   │   └── Installation/
+│   │       └── Installation.jsx  # Installation guide page
+│   ├── router/
+│   │   └── router.jsx            # React Router configuration
+│   ├── shared/
+│   │   ├── AppDetails.jsx        # App details component
+│   │   ├── Card.jsx              # Reusable card component
+│   │   ├── Error.jsx             # Error page component
+│   │   ├── Footer.jsx            # Footer component
+│   │   ├── Loading.jsx           # Loading animation component
+│   │   └── Navbar.jsx            # Navigation bar component
+│   └── utility/
+│       └── Utility.js            # Utility functions
+├── index.html                    # Main HTML file
+├── package.json                  # Project dependencies and scripts
+├── vite.config.js                # Vite configuration
+└── README.md                     # Project documentation
+```
 
----
 
-# 🐣 Basic Requirements
+## 📊 Data Structure
 
-- Make the Application Responsive for All the Devices
-- Do minimum 5 commits to your github Repository
-- Give a meaning full name to your application
-- Make Sure on Production Application is error Free
-- Add a Readme.md with App Name , Description & Technologies
+The application uses a JSON-based data structure for app information:
 
----
+```json
+{
+  "id": "number",
+  "image": "string",
+  "title": "string",
+  "companyName": "string",
+  "description": "string",
+  "size": "number",
+  "reviews": "number",
+  "ratingAvg": "number",
+  "downloads": "number",
+  "ratings": [
+    { "name": "1 star", "count": "number" },
+    { "name": "2 star", "count": "number" },
+    { "name": "3 star", "count": "number" },
+    { "name": "4 star", "count": "number" },
+    { "name": "5 star", "count": "number" }
+  ]
+}
+```
 
-# 🔧 Main Requirements
 
-## 1. 🧱 Layout & Data Design
+## 🛠️ Technologies Used
 
-#### Header
+### Frontend Framework
 
-- The header must include:
-  - A logo.on clicking it user will be navigated to home page.
-  - A navigation bar with links [ `home` , `apps` , `installation` ] and active route indication.
-  - A `Contribution` button as Figma linking to the your GitHub profile.
+- **React 19.2.4** - Modern JavaScript library for building user interfaces
+- **Vite 8.0.1** - Fast build tool and development server
 
-#### Footer
+### Styling & UI
 
-- Design a custom footer using your own creativity and style.
+- **Tailwind CSS 4.2.2** - Utility-first CSS framework
+- **DaisyUI 5.5.19** - Component library for Tailwind CSS
+- **Inter Font** - Google Fonts for typography
 
-#### Data
+### Routing & State Management
 
-- Create an JSON Array of minimum 12-20 objects for app data using the following structure:
-  ```js
-  {
-    image: string;
-    title: string;
-    companyName: string;
-    id: number;
-    description: string;
-    size: number;
-    reviews: number;
-    ratingAvg: number;
-    downloads: number;
-    ratings: [
-      { name: "1 star"; count: number },
-      { name: "2 star"; count: number },
-      { name: "3 star"; count: number },
-      { name: "4 star"; count: number },
-      { name: "5 star"; count: number }
-    ];
-  }
-  ```
+- **React Router 7.13.1** - Declarative routing for React
 
----
+### Data Visualization
 
-## 2. 🏠 Home Page
+- **Recharts 3.8.0** - Composable charting library built on React components
 
-#### Banner
+### Animations & Interactions
 
-- Must contain a center-aligned heading, text, and two buttons.
-- “App Store” button will redirect to the App Store.
-- “Play Store” button will redirect to the Play Store.
+- **AOS (Animate On Scroll) 2.3.4** - Library for animating elements on scroll
+- **Lottie React 2.4.1** - React component for Lottie animations
+- **React Countup 6.5.3** - React component for animated counting
 
-#### States Section
+### Icons & Notifications
 
-- Must contain three state cards as shown in Figma.
+- **React Icons 5.6.0** - Popular icon library for React
+- **React Toastify 11.0.5** - Toast notifications for React
 
-#### Top Apps Section
+### Development Tools
 
-- Display eight apps in a four-column layout.
-- Each app card should display:
-  - App title
-  - Image
-  - Download count
-  - Average rating
-- Clicking on a card should navigate the user to the App Details page.
-- Include a “Show All” button that navigates to the All Apps page.
+- **ESLint 9.39.4** - JavaScript linting utility
+- **TypeScript Types** - Type definitions for React and related libraries
 
----
+## 🚀 Features
 
-## 3.📱 All Apps Page
+### Core Functionality
 
-#### Title Section
+- **Responsive Design** - Optimized for all device sizes
+- **App Discovery** - Browse and search through app catalog
+- **Detailed App Pages** - Comprehensive app information with reviews and ratings
+- **Live Search** - Real-time app filtering with case-insensitive search
+- **App Installation** - Install/uninstall apps with localStorage persistence
+- **Review Charts** - Visual representation of app ratings using Recharts
 
-- Include a title and subtitle following the Figma design.
+### User Experience
 
-#### Search and States
+- **Loading Animations** - Smooth loading states during navigation and search
+- **Toast Notifications** - User feedback for actions like installation
+- **Error Handling** - Custom error pages for invalid routes
+- **Smooth Animations** - AOS-powered scroll animations
 
-- Display the total number of apps on the left and a search bar on the right.
-- `Implement live search functionality`
-  - filters apps by title as the user types.
-  - Search will be case-insensitive
-  - If no app matches, display a “No App Found” message.
+### Navigation
 
-#### App Section
+- **SPA Routing** - Client-side routing with React Router
+- **Active Route Indication** - Visual feedback for current page
+- **Mobile-Friendly Menu** - Responsive navigation for all devices
 
-- Display all apps from the JSON data.
-- Each app card should include:
-  - App title
-  - Image
-  - Download count
-  - Average rating
-- Clicking on an app card should navigate to the App Details page.
 
----
+## 👨‍💻 Author
 
-## 4.📊 App Details Page
+**Shad**
 
-#### App Information
+- **GitHub**: [shad910](https://github.com/shad910)
+- **Project Repository**: [mr3-hero-io](https://github.com/shad910/mr3-hero-io)
 
-- Show app image on the left.
-- Display app details such as title, rating, downloads, reviews.
-- Include an `Install button`:
-  - When clicked, it becomes disabled and the text changes to `Installed`.
-  - Show a Success Toast after App installed
+## 📄 License
 
-#### App Review Chart
-
-- Implement a responsive chart using the **Recharts** library.
-- Visualize the app’s review data as shown in the Figma design.
-
-#### App Description
-
-- Show the app details in description section as per Figma layout.
-
----
-
-## 5. Error Page & Others
-
-- Create a custom error page for invalid routes.
-
-- Show a loading animation during: `Challenge Part`
-  - Page navigation.
-  - Search operation.
-
-- Show a Relevant Not Found message app not found in app details section.
-
-- Ensure that reloading any route after deployment does not cause an error.
-
----
-
-# Challenge Requirement
-
-### LocalStorage Features
-
-#### App Installation
-
-- When the “Install” button is clicked:
-  - Save the app to localStorage.
-  - If the app is already installed, show a disabled button with the text `Installed`.
-
-#### My Installation Page
-
-- Create a page named “My Installation” following the Figma design.
-- Display all installed apps as cards.
-- Include an Uninstall button:
-  - Clicking it
-    - removes the app from both the UI and localStorage.
-    - Show an Toast with some relevant message
-
----
-
-### Sort by Downloads
-
-- Implement a dropdown for sorting apps by download count.
-- The dropdown must include:
-  - **High-Low:** Sort apps in descending order by downloads.
-  - **Low-High:** Sort apps in ascending order by downloads.
-
----
-
-### Loading Animation
-
-- Show a loading animation during:
-  - Page navigation.
-  - Search operation
-
----
-
-## 🚀 Deployment
-
-- Deploy the project to Cloudflare / Netlify / Vercel.
-- Reloading from any route must work correctly without showing a 404 error.
-
----
-
-## 🔗 Submission Guideline
-
-- **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
-
-### 📅 Deadline For 60 marks: 26 March , 2026 (11:59 pm ⏱️)
-
-### 📅 Deadline For 50 marks : 27 March , 2026 (11:59 pm⏱️)
-
-### 📅 Deadline For 30 marks: Since this is the final assignment, there will be no 30-mark deadline. You must submit it within the 50-mark deadline to qualify for the reward.
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project is developed as part of an assignment and is intended for educational purposes.
